@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <section class="todo-outer">
+    <div class="container">
+      <div class="row">
+          <h1>Todo List Application</h1>
+          <div class="todo-inner">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />
+                <input type="hidden" id="saveindex">
+              </div>
+              <button type="button" class="btnAdd" id="addtaskbtn">
+                Add 
+              </button>
+              <button type="button" class="btnSave" id="savetaskbtn" style="display: none;">
+                Save 
+              </button>
+              <button type="button" id="deleteallbtn" class="btnDel">
+                Delete All
+              </button>
+            </div>
+            <div class="to-do-output">
+              <table class="table" id="addedtasklist">
+                
+              </table>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
